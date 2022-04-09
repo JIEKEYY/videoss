@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./video.css">
+    <style>
+        .nav__item:nth-of-type(2) {
+            margin-left: 300px;
+        }
+
+        .banner_box {
+            position: relative;
+        }
+
+        #mse {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        .mainPage{
+            margin-bottom: 20px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div data-fetch-key="data-v-75386d83:0" data-v-75386d83>
+                <div id="layout" class="text-white" data-v-75386d83>
+                    <div class="w-full fixed left-0 right-0 top-0" style="z-index:9;" data-v-dfbd3896 data-v-75386d83>
+                        <header class="g-header header-filter" data-v-dfbd3896>
+                            <nav class="h-full container px-20 mx-auto flex items-center justify-between"
+                                data-v-dfbd3896><a href="#" class="active-link" data-v-dfbd3896><img
+                                        src="static/picture/logo.2f10d21.png" width="32" data-v-dfbd3896></a>
+                                <div style="width: 100%;" class="flex items-center justify-center" data-v-dfbd3896>
+                                    <a href="./video.html" class="mr-12 xl:mr-16 nav__item active-link" data-v-dfbd3896>
+                                        超负荷
+                                    </a>
+                                    <a href="./index.html" class="mr-12 xl:mr-16 nav__item" data-v-dfbd3896>
+                                      首页
+                                    </a>
+                                    <a href="./list.html" aria-current="page"
+                                        class="mr-12 xl:mr-16 nav__item exact-active-link active-link" data-v-dfbd3896>
+                                        场景
+                                    </a>
+                                </div>
+                            </nav>
+                        </header>
+                    </div>
+                    <div class="page relative safe-height" data-v-0b098908 data-v-75386d83>
+                        <div class="mlogo" data-v-0b098908></div>
+                        <!-- <img src="static/picture/m_logo.7c4ddc2.png" width="270"height="35" data-v-0b098908> -->
+                        <div class="banner_box" data-v-486adef9 data-v-0b098908><img data-v-486adef9=""
+                                src="https://video.momentor.cn/youown/videoback/b38af08a0ef34edf8a2b541755115fd6.mp4?x-oss-process=video/snapshot,t_30000"
+                                alt="" class="imgbg">
+                            <div id="mse"></div>
+                        </div>
+                        <div class="mainPage" data-v-0b098908>
+                            <div class="introduce" data-v-41a3bae2 data-v-0b098908>
+                                <div class="logo" data-v-41a3bae2><img src="static/picture/w_logo.a83587a.png"
+                                        data-v-41a3bae2></div>
+                                <div class="laber" data-v-41a3bae2><span class="green" data-v-41a3bae2>MOGROUP</span>
+                                    <span data-v-41a3bae2>是MOMENTOR旗下的</span> <span class="green"
+                                        data-v-41a3bae2>优秀学生精英会</span> <span data-v-41a3bae2>，我们汇聚了</span> <span
+                                        class="green" data-v-41a3bae2>MO线上课毕设入围的学生、特邀一线设计师和特邀企业创始人。</span> <span
+                                        data-v-41a3bae2>
+                                        在这里你可以获得优质的项目外包一线企业招聘内推以及有问必答的技术交流环境。目前有大量MOGROUP学生通过课程毕设入围和得奖获得了顶尖工作室、互联网大厂的工作，成为企业的中坚力量。
+                                        <br data-v-41a3bae2> <br data-v-41a3bae2>
+
+                                        我们希望这个集体能帮助课程以专业项目水准为目标培养学生，让学生学以致用，并且还能通过接触优质实战项目完成课程里学不到的商业知识。同时，行业对专业人才的渴望也越来越强，因此MO希望为行业输出合格、匹配行业的人才，为行业带来更多新鲜血液。
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/xgplayer@2.1.4/browser/index.js" type="text/javascript"></script>
+    <script>
+        let player = new Player({
+            id: 'mse',
+            autoplay: false,
+            volume: 0.3,
+            fitVideoSize: 'auto',
+            url: 'http://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-720p.mp4',
+            playsinline: true,
+            loop: true,
+            videoInit: true,
+            width: 1134,
+            height: 580
+        });
+    </script>
+</body>
+
+</html>
